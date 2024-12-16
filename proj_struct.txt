@@ -1,0 +1,47 @@
+healthcare-cybersec-rl/
+│
+├── README.md
+├── requirements.txt
+├── setup.py
+├── .gitignore
+├── LICENSE
+│
+├── notebooks/
+│   ├── 01_SARSA_RandomAttack.ipynb
+│   └── 02_DDQN_Attacks.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── sarsa_agent.py
+│   │   └── ddqn_agent.py
+│   │
+│   ├── environments/
+│   │   ├── __init__.py
+│   │   └── idsgame_wrapper.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── neural_networks.py
+│   │
+│   ├── training/
+│   │   ├── __init__.py
+│   │   ├── sarsa_trainer.py
+│   │   └── ddqn_trainer.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── config.py
+│       ├── logger.py
+│       └── visualization.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_sarsa_agent.py
+│   └── test_ddqn_agent.py
+│
+└── data/
+    ├── models/
+    └── results/
